@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-image: url('./assets/tamalsen-home-cover.jpg');
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+
+header h2 {
+  position: absolute;
+  left: 34px;
+  top: 30px;
+
+  font-family: Roboto Mono, sans-serif;
+  font-size: 30px;
+  font-weight: 500;
+  color: aqua;
+}
+
+#ponto {
+  color: white;
+}
+
+#underline {
+  color: blueviolet;
+}
+
+#header-wrap-inner {
+  display: flex;
+  justify-content: center;
+}
+
+#nav-container ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 42px;
+  padding: 43px 21px;
+
+  list-style: none;
+  font-family: Roboto Mono, sans-serif;
+  font-size: 17.6px;
+  line-height: 22.88px;
+  color: #ffff;
+}

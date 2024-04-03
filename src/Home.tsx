@@ -1,24 +1,78 @@
 import './Home.css'
+import iconComputer from './assets/computer.svg'
+import iconReact from './assets/react.svg'
 
 function Home() {
   return (
     <div>
-        <header>
-          <div id="header-wrap-inner">
-            <h2>Felipe<strong id='ponto'>.</strong><strong id='underline'>_</strong></h2>
-            <nav id='nav-container'>
-              <ul>
-                <li>// home</li>
-                <li>// expertise</li>
-                <li>// work</li>
-                <li>// expertise</li>
-                <li>// contact</li>
-              </ul>
-            </nav>
+      <header>
+        <div id="header-wrap-inner">
+          <h2>
+            Felipe<strong id="ponto">.</strong>
+            <strong id="underline">_</strong>
+          </h2>
+          <nav id="nav-container">
+            <ul>
+              <li>
+                {' '}
+                <a href="">// home</a>{' '}
+              </li>
+              <li>
+                {' '}
+                <a href="">// expertise</a>{' '}
+              </li>
+              <li>
+                {' '}
+                <a href="">// work</a>{' '}
+              </li>
+              <li>
+                {' '}
+                <a href="">// expertise</a>{' '}
+              </li>
+              <li>
+                {' '}
+                <a href="">// contact</a>{' '}
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div id="content_title">
+          <h1>Felipe Allan</h1>
+          <h3>SOFTWARE ENGINEER, FRONT END & APP DEVELOPER.</h3>
+        </div>
+
+        <div className="elementor">
+          <div className="elementorContainer">
+            <div className="circle yel" id="circleMain"></div>
           </div>
-        </header>
+        </div>
+      </header>
+
+      <section id="skills">
+        <h2>My Expertise</h2>
+
+        <div className="boxSkills">
+          <div className="itemSkills" id="boxSkills1">
+            <div className="titleBox">
+              <img src={iconComputer} alt="monitor" />
+              <h3>
+                Software <br /> Development
+              </h3>
+            </div>
+          </div>
+          <div className="itemSkills" id="boxSkills2">
+            <div className="titleBox">
+              <img src={iconReact} alt="monitor" />
+              <h3>
+                Frontend Dev <br /> React, NextJS{' '}
+              </h3>
+            </div>
+          </div>
+          <div className="itemSkills" id="boxSkills3"></div>
+        </div>
+      </section>
     </div>
-  ) 
+  )
 }
 
 export default Home
